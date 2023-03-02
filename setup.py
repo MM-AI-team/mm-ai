@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='mmai',
+    name='mmai-utils',
     version=open('mmai/VERSION').read().strip(),
     description='MMAI helper functions and classes',
     install_requires=open('requirements.txt').read().splitlines(),
