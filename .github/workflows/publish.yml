@@ -6,7 +6,7 @@ on:
     paths:
       - mmai/VERSION
       - .github/workflows/publish.yml
-      = setup.py
+      - setup.py
 
 jobs:
   publish_package:
