@@ -1,4 +1,4 @@
-import nunpy as np
+import numpy as np
 import pydicom
 from pydicom.pixel_data_handlers.util import apply_windowing
 
