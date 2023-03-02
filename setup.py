@@ -7,4 +7,5 @@ setup(
     install_requires=open('requirements.txt').read().splitlines(),
     packages=find_packages(),
     include_package_data=True,
+    package_data={"mmai": ["VERSION"]},
 )
