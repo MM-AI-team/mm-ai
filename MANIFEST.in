@@ -1,0 +1,4 @@
+global-include *.txt *.py
+include mmai/VERSION
+include requirements*
+recursive-include mmai *
