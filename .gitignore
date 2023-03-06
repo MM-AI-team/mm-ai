@@ -1,3 +1,5 @@
 .venv/
 build/
 mmai.egg-info/
+mmai_utils.egg-info/
+*.pyc
