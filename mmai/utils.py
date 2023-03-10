@@ -55,6 +55,35 @@ def quadrant_text_to_array(x: str) -> np.array:
         result[index] = 1
     return result
 
+def quadrant_array_to_text(x: np.array) -> str:
+    """
+    This function will return a 5 numbered array
+
+    Examples of x:
+
+    "[0, 0, 0, 1, 1]",
+    "[0, 0, 0, 0, 1]",
+
+    The order is:
+    ALT DIŞ, ALT İÇ, MERKEZ, ÜST DIŞ, ÜST İÇ
+    """
+    mapping = {
+        0: "ALT DIŞ",
+        1: "ALT İÇ",
+        2: "MERKEZ",
+        3: "ÜST DIŞ",
+        4: "ÜST İÇ",
+    }
+
+    result = []
+    for i, value in enumerate(x):
+        if value == 1:
+            result.append(mapping[i])
+
+    if len(result) == 0:
+        return "nan"
+    return str(result)
+
 
 def get_label_from_ordinal_breast_composition(ordinal_value: float) -> str:
     classes = ["A", "B", "C", "D"]
